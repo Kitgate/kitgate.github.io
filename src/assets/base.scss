@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "Pixeloid Sans";
+	src: url("./font/PixeloidSans.ttf");
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	position: relative;
+	font-weight: normal;
+}
+
+#app {
+	height: 100vh;
+    overflow: hidden;
+}
+
+body {
+	min-height: 100vh;
+	font-family: "Pixeloid Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 18px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	image-rendering: pixelated;
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+}
