@@ -17,6 +17,7 @@ const { text, currentString, isAtLastLetter } = useTypewriter(strings, { loop: f
 </template>
 
 <style lang="scss" scoped>
+
 .textbox {
 	border-image-slice: 6 5 5 5 fill;
 	border-image-width: 1rem 1rem 1rem 1rem;
