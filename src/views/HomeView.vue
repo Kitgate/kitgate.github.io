@@ -3,33 +3,64 @@
 <template>
 	<main>
 		<div class="title-box">
-			<img src="/img/logo.png" width="176" height="86" />
+			<img
+				src="../img/logo.png"
+				width="176"
+				height="86"
+				alt="Kitgate Studios"
+			/>
 		</div>
 		<p class="tagline">2 cat 2 game</p>
 		<div class="divider"></div>
 		<section class="main-content">
 			<section class="cat-container">
-				<img src="/img/cat/m.png" alt="Cat" width="79" height="92" />
+				<img src="../img/cat/m.png" alt="Cat" width="79" height="92" />
 			</section>
-			<TextBox text="Welcome message :3c"> </TextBox>
+			<TextBox class="text-box" text="Welcome message :3c"> </TextBox>
 
 			<section class="button-container">
 				<RouterLink to="/timeline" class="menu-button">
-					<img src="/img/button/timeline.png" alt="Timline" width="76" height="20" role="button" />
+					<img
+						src="../img/button/timeline.png"
+						alt="Timline"
+						width="76"
+						height="20"
+						role="button"
+					/>
 				</RouterLink>
 				<RouterLink to="/cats" class="menu-button">
-					<img src="/img/button/cats.png" alt="The Cats" width="76" height="20" role="button" />
+					<img
+						src="../img/button/cats.png"
+						alt="The Cats"
+						width="76"
+						height="20"
+						role="button"
+					/>
 				</RouterLink>
 				<RouterLink to="/team" class="menu-button">
-					<img src="/img/button/team.png" alt="Our Team" width="76" height="20" role="button" />
+					<img
+						src="../img/button/team.png"
+						alt="Our Team"
+						width="76"
+						height="20"
+						role="button"
+					/>
 				</RouterLink>
 				<RouterLink to="/contact" class="menu-button">
-					<img src="/img/button/contact.png" alt="Contact Us" width="76" height="20" role="button" />
+					<img
+						src="../img/button/contact.png"
+						alt="Contact Us"
+						width="76"
+						height="20"
+						role="button"
+					/>
 				</RouterLink>
 			</section>
 		</section>
 		<aside></aside>
-		<footer>meow moem woem owm owem owem owem owme owem omwe ow meowm eowm</footer>
+		<footer>
+			meow moem woem owm owem owem owem owme owem omwe ow meowm eowm
+		</footer>
 	</main>
 </template>
 
@@ -40,6 +71,9 @@ footer {
 	padding: 0.4rem 0.55rem 0.5rem;
 	text-align: center;
 	border-top: gray 4px solid;
+}
+.text-box {
+	animation: expand 0.35s both;
 }
 main {
 	height: 100%;
@@ -75,16 +109,18 @@ aside {
 	text-align: center;
 	padding: 0.15rem 0;
 	margin-bottom: 2rem;
+	animation: expand 0.35s;
 }
 .title-box {
-	height: 30%;
 	display: flex;
 	text-align: center;
 	margin: 0.5rem auto;
 	justify-content: center;
+    width: 100%;
 	img {
-		height: 100%;
-		width: auto;
+		width: 90%;
+        height: auto;
+        max-width: 600px;
 	}
 	animation: expand 0.35s;
 }
@@ -100,7 +136,7 @@ body::before {
 	margin: 0 auto;
 	width: max(60%, calc(100% - 24rem));
 	height: 100%;
-	background-image: url("/img/background.png");
+	background-image: url("../img/background.png");
 
 	box-shadow: inset 0px 0px 0px 6px #ffffff33;
 	background-size: cover;
@@ -125,6 +161,14 @@ body::before {
 	filter: grayscale(100%);
 	&:hover {
 		filter: none;
+	}
+
+	animation: expand 0.35s both;
+
+	@for $i from 1 through 4 {
+		&:nth-child(#{$i}) {
+			animation-delay: ($i - 1) * 0.1s;
+		}
 	}
 }
 </style>
