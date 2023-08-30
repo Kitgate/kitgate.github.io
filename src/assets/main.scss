@@ -17,3 +17,20 @@
 		transform: none;
 	}
 }
+
+/* we will explain what these classes do next! */
+.kk-enter-active,
+.kk-leave-active {
+	transition: background-color 0.5s ease;
+	position: absolute;
+	width: 100%;
+}
+.kk-enter-active {
+}
+
+.kk-enter-from {
+    background-color: yellow;
+}
+.kk-leave-to {
+    background-color: blue;
+}

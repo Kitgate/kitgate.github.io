@@ -10,30 +10,34 @@ const router = createRouter({
 	routes: [
 		{
 			path: "/",
-			name: "home",
+			name: "Kitgate",
 			component: HomeView,
 		},
 		{
 			path: "/cats",
-			name: "cats",
+			name: "Kitgate - The Cats",
 			component: CatsView,
 		},
 		{
 			path: "/team",
-			name: "team",
+			name: "Kitgate - Our Team",
 			component: TeamView,
 		},
 		{
 			path: "/timeline",
-			name: "timeline",
+			name: "Kitgate - Timeline",
 			component: TimelineView,
 		},
 		{
 			path: "/contact",
-			name: "contact",
+			name: "Kitgate - Contact",
 			component: ContactView,
 		},
 	],
 });
-
+router.beforeEach((to, from, next) => {
+    // @ts-ignore
+	document.title = to.name ?? "Kitgate";
+	next();
+});
 export default router;

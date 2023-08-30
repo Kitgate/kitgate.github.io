@@ -23,13 +23,20 @@ const { text, currentString, isAtLastLetter } = useTypewriter(strings, { loop: f
 	border-image-width: 1rem 1rem 1rem 1rem;
 	border-image-outset: 0px 0px 0px 0px;
 	border-image-repeat: stretch stretch;
-	border-image-source: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAB5QTFRFAAAA/7YA/+17AAAA/4gA/8MA/6M0/0oAAABVAAAAmVH5YAAAAAp0Uk5TAP////////8DAgWMNEYAAAB6SURBVHicY2DACQSxAgYGRiWsQIBBCLuEIlACm0kgCUVjLEBogCWcVLBJOKlQUwKn5a4hVHMVdqNcQ3BLkG6UWwo2CbcUMizHKVEajk2iNJyhLB2bRFk6GRI4/UG6BBVdNeQkyrGANKBEGlaQztCOXaKSgQObSeXlDQDjRfuP7yH8FQAAAABJRU5ErkJggg==");
+	border-image-source: url("/img/menu.png");
 	border-style: solid;
 	padding: 20px;
 	color: white;
-	width: 40em;
+    width: 100%;
 	display: flex;
 	flex-direction: column;
+    font-weight: bold;
+    margin: 0 auto;
+    height: 12rem;
+    margin-bottom: 4rem;
+	@media only screen and (max-width: 480px) {
+		margin-bottom: 0;
+	}
 }
 
 .textbox > span::after {

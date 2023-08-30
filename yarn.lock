@@ -545,6 +545,13 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
+flip-toolkit@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/flip-toolkit/-/flip-toolkit-7.1.0.tgz#36b96058ea96a27bd8cf2dba2fab4cd59ff1d83c"
+  integrity sha512-tvids+uibr8gVFUp1xHMkNSIFvM4++Xr4jAJouUVsId2hv3YvhvC4Ht2FJzdxBZHhI4AeULPFAF6z9fhc20XWQ==
+  dependencies:
+    rematrix "0.2.2"
+
 for-each@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/for-each/-/for-each-0.3.3.tgz#69b447e88a0a5d32c3e7084f3f1710034b21376e"
@@ -1015,6 +1022,11 @@ regexp.prototype.flags@^1.5.0:
     define-properties "^1.2.0"
     functions-have-names "^1.2.3"
 
+rematrix@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/rematrix/-/rematrix-0.2.2.tgz#c96a050260782db9908904885991256e23beda5d"
+  integrity sha512-agFFS3RzrLXJl5LY5xg/xYyXvUuVAnkhgKO7RaO9J1Ssth6yvbO+PIiV67V59MB5NCdAK2flvGvNT4mdKVniFA==
+
 resolve@^1.10.0:
   version "1.22.4"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.4.tgz#1dc40df46554cdaf8948a486a10f6ba1e2026c34"
@@ -1260,6 +1272,11 @@ vite@^4.1.4:
     rollup "^3.27.1"
   optionalDependencies:
     fsevents "~2.3.2"
+
+vue-flip-transition@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/vue-flip-transition/-/vue-flip-transition-1.0.9.tgz#3b7741ca4ec7663c4b7cd1c20ea822224204ec84"
+  integrity sha512-MVY38H6Hmx3HTSozkPAAsJgZ3j/lePQTyslU6LTzrsh/7eUSvaC2chnXqO+Y43ub5cjXRBBiEKQEvKKAEftHyA==
 
 vue-router@^4.1.6:
   version "4.2.4"

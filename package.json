@@ -11,8 +11,10 @@
 	},
 	"dependencies": {
 		"@altgen/typer-composable": "^1.3.0",
+		"flip-toolkit": "^7.1.0",
 		"sass": "^1.58.3",
 		"vue": "^3.2.47",
+		"vue-flip-transition": "^1.0.9",
 		"vue-router": "^4.1.6"
 	},
 	"devDependencies": {
