@@ -9,7 +9,6 @@ import { ref } from "vue";
 		logoAlt="Kitgate"
 		text="MIAUUUUUUUU"
 		current="home"
-		background="/img/background/home.png"
         cat="/img/cat/m.png"
 	/>
 </template>

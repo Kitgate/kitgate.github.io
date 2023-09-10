@@ -5,12 +5,13 @@ const props = defineProps<{
 	name: string;
 	alt: string;
     active: boolean;
+    link?: string;
 }>();
 const clicked = ref(false);
 </script>
 <template>
 	<RouterLink
-		:to="`/${name}`"
+		:to="`/${link ?? name}`"
 		class="menu-button"
 		@mousedown="clicked = true"
 		@mouseup="clicked = false"

@@ -8,7 +8,6 @@ import MainView from "@/components/MainView.vue";
 		logoAlt="Timeline"
 		text="timeline"
 		current="timeline"
-		background="/img/background/timeline.png"
 		cat="/img/cat/b.png"
         invertMenu
 	/>

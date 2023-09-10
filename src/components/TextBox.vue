@@ -33,7 +33,6 @@ const { text, currentString, isAtLastLetter } = useTypewriter(strings, { loop: f
     font-weight: bold;
     margin: 0 auto;
     height: 12rem;
-    margin-bottom: 4rem;
 	@media only screen and (max-width: 480px) {
 		margin-bottom: 0;
 	}

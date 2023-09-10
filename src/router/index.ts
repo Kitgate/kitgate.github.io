@@ -12,6 +12,9 @@ const router = createRouter({
 			path: "/",
 			name: "Kitgate",
 			component: HomeView,
+			meta: {
+				background: "/img/background/home.png",
+			},
 		},
 		{
 			path: "/cats",
@@ -27,6 +30,9 @@ const router = createRouter({
 			path: "/timeline",
 			name: "Kitgate - Timeline",
 			component: TimelineView,
+			meta: {
+				background: "/img/background/timeline.png",
+			},
 		},
 		{
 			path: "/contact",
@@ -36,8 +42,9 @@ const router = createRouter({
 	],
 });
 router.beforeEach((to, from, next) => {
-    // @ts-ignore
+	// @ts-ignore
 	document.title = to.name ?? "Kitgate";
+	to.meta.previousBackground = from.meta.background;
 	next();
 });
 export default router;
