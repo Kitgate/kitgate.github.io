@@ -1,4 +1,7 @@
 @import "./base.scss";
+:root {
+	--content-width: calc(60%);
+}
 /*
 @keyframes expand {
 	0% {
@@ -18,7 +21,6 @@
 	}
 }*/
 
-/* we will explain what these classes do next! */
 $transition-time: 0.3s;
 .kk-enter-active,
 .kk-leave-active {
@@ -34,8 +36,8 @@ $transition-time: 0.3s;
 	.title-box {
 		transition: transform ease $transition-time;
 	}
-	&::before,
-	&::after {
+	main::before,
+	main::after {
 		transition: opacity linear $transition-time, clip-path linear $transition-time;
 	}
 }
@@ -48,11 +50,12 @@ $transition-time: 0.3s;
 	.title-box {
 		transform: scale(0);
 	}
-	&::before,
-	&::after {
+	main::before,
+	main::after {
 		opacity: 0.5;
 	}
-	&::after {
+	main::after {
+		//width: calc(var(--content-width) - 32px);
 		clip-path: polygon(calc(20% - 16px) 0%, calc(80% + 16px) 0%, calc(80% + 16px) 100%, calc(20% - 16px) 100%);
 	}
 }
@@ -65,19 +68,20 @@ $transition-time: 0.3s;
 	.title-box {
 		transform: scale(1);
 	}
-	&::after {
+	main::after {
 		clip-path: polygon(20% 0%, 80% 0%, 80% 100%, 20% 100%);
+		//width: var(--content-width);
 	}
 }
 .kk-leave-from {
-	&::before,
-	&::after {
+	main::before,
+	main::after {
 		opacity: 0;
 	}
 }
 .kk-enter-to {
-	&::before,
-	&::after {
+	main::before,
+	main::after {
 		opacity: 1;
 	}
 }
@@ -103,9 +107,12 @@ $transition-time: 0.3s;
 
 .main-container::after {
 	background-color: #48225480;
+	//width: var(--content-width);
 	clip-path: polygon(20% 0%, 80% 0%, 80% 100%, 20% 100%);
 }
 .main-container {
 	height: 100vh;
 	z-index: 0;
+	overflow-y: scroll;
+	scrollbar-color: #a890ca #ffe0f7;
 }

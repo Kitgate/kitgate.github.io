@@ -6,6 +6,7 @@ const props = defineProps<{
 	alt: string;
     active: boolean;
     link?: string;
+	dimensions?: [number, number]
 }>();
 const clicked = ref(false);
 </script>
@@ -20,8 +21,8 @@ const clicked = ref(false);
 		<img
 			:src="`/img/button/${clicked !== active ? 'on' : 'off'}/${name}.png`"
 			:alt="alt"
-			width="76"
-			height="20"
+			:width="dimensions ? dimensions[0] : 76"
+			:height="dimensions ? dimensions[1] : 20"
 			role="button"
 		/>
 	</RouterLink>

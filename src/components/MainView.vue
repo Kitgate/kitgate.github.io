@@ -59,16 +59,22 @@ const menuOrder = computed(() => (props.invertMenu ? "row-reverse" : "row"));
 					alt="Home"
 					:active="current === 'home'"
 					link=""
+					:dimensions="[50, 20]"
 				></MenuButton>
 			</div>
 		</section>
+		<slot />
 	</main>
 </template>
 <style lang="scss">
 .back-container {
 	.menu-button {
-		width: 9rem;
-		margin-left: auto;
+		img {
+			height: 100%;
+			width: auto;
+			margin-left: auto;
+		}
+		display: contents;
 	}
 	margin: 0.5rem;
 	margin-bottom: 2rem;
@@ -99,13 +105,11 @@ main {
 	width: 100%;
 	max-width: 40em;
 	margin: 0 auto;
+	padding: 0 1rem;
 }
 .cat-container {
 	width: 16rem;
 	display: flex;
-	@media only screen and (max-width: 1025px) {
-		width: 14rem;
-	}
 	img {
 		width: 100%;
 		height: auto;
@@ -128,7 +132,8 @@ aside {
 	display: flex;
 	text-align: center;
 	margin: 0.5rem auto;
-	margin-top: 3.25rem;
+	margin-top: 2.25rem;
+	padding: 0.5rem 0;
 	justify-content: center;
 	width: 100%;
 	img {
@@ -179,5 +184,6 @@ main::after {
 main::after {
 	background-color: #48225480;
 	clip-path: polygon(20% 0%, 80% 0%, 80% 100%, 20% 100%);
+	//width: var(--content-width);
 }
 </style>

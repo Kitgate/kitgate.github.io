@@ -25,7 +25,7 @@ const { text, currentString, isAtLastLetter } = useTypewriter(strings, { loop: f
 	border-image-repeat: stretch stretch;
 	border-image-source: url("/img/menu.png");
 	border-style: solid;
-	padding: 20px;
+	padding: 1.5rem;
 	color: white;
     width: 100%;
 	display: flex;
@@ -33,6 +33,7 @@ const { text, currentString, isAtLastLetter } = useTypewriter(strings, { loop: f
     font-weight: bold;
     margin: 0 auto;
     height: 12rem;
+    font-size: 1.4rem;
 	@media only screen and (max-width: 480px) {
 		margin-bottom: 0;
 	}

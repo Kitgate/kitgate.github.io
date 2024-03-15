@@ -4,14 +4,15 @@ import { ref } from "vue";
 </script>
 
 <template>
-	<MainView
-		logo="/img/logo/kitgate.png"
-		logoAlt="Kitgate"
-		text="MIAUUUUUUUU"
-		current="home"
-        cat="/img/cat/m.png"
-	/>
+	<div class="content-wrapper">
+		<MainView
+			logo="/img/logo/kitgate.png"
+			logoAlt="Kitgate"
+			text="MIAUUUUUUUU"
+			current="home"
+			cat="/img/cat/m.png"
+		/>
+	</div>
 </template>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

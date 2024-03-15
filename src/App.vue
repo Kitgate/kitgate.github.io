@@ -27,9 +27,7 @@ let currentForeground = ref(route.meta.background);
 					currentBackground = route.meta.previousBackground;
 					currentForeground = route.meta.background;
 				"
-				@after-enter="
-					currentBackground = route.meta.background;
-				"
+				@after-enter="currentBackground = route.meta.background"
 			>
 				<component :is="Component" />
 			</transition>

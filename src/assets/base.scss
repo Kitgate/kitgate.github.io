@@ -40,3 +40,19 @@ body {
 main > .title-box {
 	overflow-x: hidden;
 }
+
+html {
+	@media only screen and (max-width: 1025px) {
+		font-size: 10px;
+	}
+}
+::selection {
+	background-color: white;
+	color: black;
+}
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
