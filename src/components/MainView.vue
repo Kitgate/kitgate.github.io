@@ -155,12 +155,14 @@ aside {
 	flex-wrap: wrap;
 	height: fit-content;
 	margin-top: auto;
-	max-width: 40vw;
 	.menu-button {
 		width: 50%;
-		@media only screen and (max-width: 480px) {
+	}
+	@media only screen and (max-width: 565px) {
+		.menu-button {
 			width: 100%;
 		}
+		max-width: 45vw;
 	}
 }
 main::before,
@@ -178,11 +180,11 @@ main::after {
 	background-position: center;
 	z-index: -1;
 	background-blend-mode: multiply;
-	background-color: #482254bf;
+	background-color: #4822548f;
 }
 
 main::after {
-	background-color: #48225480;
+	background-color: #48225450;
 	clip-path: polygon(20% 0%, 80% 0%, 80% 100%, 20% 100%);
 	//width: var(--content-width);
 }

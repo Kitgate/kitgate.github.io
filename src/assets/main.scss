@@ -102,11 +102,11 @@ $transition-time: 0.3s;
 	background-position: center;
 	z-index: -2;
 	background-blend-mode: multiply;
-	background-color: #482254bf;
+	background-color: #4822548f;
 }
 
 .main-container::after {
-	background-color: #48225480;
+	background-color: #0d0d0e50;
 	//width: var(--content-width);
 	clip-path: polygon(20% 0%, 80% 0%, 80% 100%, 20% 100%);
 }
