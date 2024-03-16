@@ -175,7 +175,7 @@ aside {
 	.menu-button {
 		width: 12rem;
 	}
-	@media only screen and (max-width: 610px) {
+	@media only screen and (max-width: 680px) {
 		flex-wrap: nowrap;
 		flex-direction: column;
 		width: 12rem;
