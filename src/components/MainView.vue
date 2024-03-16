@@ -214,7 +214,7 @@ main::after {
 			margin: auto;
 		}
 	}
-	@media only screen and (max-height: 660px) {
+	@media only screen and (max-height: 760px) {
 		.cat-container {
 			width: 10rem;
 		}
@@ -224,7 +224,7 @@ main::after {
 			width: 80%;
 		}
 	}
-	@media only screen and (max-height: 560px) {
+	@media only screen and (max-height: 660px) {
 		.title-box img {
 			max-height: 7rem;
 		}
