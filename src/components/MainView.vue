@@ -163,7 +163,7 @@ aside {
 	font-size: 1.25rem;
 }
 .divider {
-	flex-grow: 1;
+	flex-grow: 0.5;
 }
 .button-container {
 	display: flex;
