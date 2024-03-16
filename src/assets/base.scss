@@ -50,7 +50,10 @@ html {
 		font-size: 13px;
 	}
 	@media only screen and (max-height: 560px) {
-		font-size: 10px;
+		font-size: 12px;
+	}
+	@media only screen and (max-height: 390px) {
+		font-size: 10.5px;
 	}
 }
 ::selection {

@@ -109,7 +109,7 @@ main {
 	padding: 0 1rem;
 }
 .cat-container {
-	width: 28rem;
+	width: 16rem;
 	display: flex;
 	img {
 		width: 100%;
@@ -117,19 +117,14 @@ main {
 		margin-top: auto;
 	}
 	animation: slide 0.35s;
-	@media only screen and (max-width: 767px) {
-		max-width: 216px;
-	}
-
-	@media only screen and (max-height: 767px) {
-		width: 18rem;
-	}
-	@media only screen and (max-height: 560px) {
-		width: 12rem;
+	@media only screen and (max-height: 660px) {
 		img {
 			position: absolute;
 			bottom: 0;
 		}
+	}
+	@media only screen and (max-height: 560px) {
+		width: 14rem;
 	}
 }
 aside {
@@ -176,12 +171,14 @@ aside {
 	flex-wrap: wrap;
 	height: fit-content;
 	margin-top: auto;
+    width: 24rem;
 	.menu-button {
 		width: 12rem;
 	}
 	@media only screen and (max-width: 610px) {
 		flex-wrap: nowrap;
 		flex-direction: column;
+		width: 12rem;
 	}
 }
 main::before,
