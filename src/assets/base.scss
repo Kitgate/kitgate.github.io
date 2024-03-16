@@ -16,6 +16,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	position: relative;
+	scrollbar-color: #a890ca #ffe0f7;
 }
 
 #app {
@@ -58,6 +59,7 @@ html {
 	@media only screen and (max-height: 390px) {
 		font-size: 10.5px;
 	}
+	overflow-y: scroll;
 }
 ::selection {
 	background-color: white;
