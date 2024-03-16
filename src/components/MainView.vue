@@ -85,7 +85,7 @@ const menuOrder = computed(() => (props.invertMenu ? "row-reverse" : "row"));
 	animation: expand 0.35s both;
 }
 main {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
