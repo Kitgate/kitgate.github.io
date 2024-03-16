@@ -25,6 +25,9 @@ const router = createRouter({
 			path: "/team",
 			name: "Kitgate - Our Team",
 			component: TeamView,
+			meta: {
+				background: "/img/temp/image.jpg",
+			},
 		},
 		{
 			path: "/timeline",

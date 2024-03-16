@@ -137,12 +137,12 @@ aside {
 	justify-content: center;
 	width: 100%;
 	img {
-		height: 100%;
-		width: auto;
-		margin: auto;
+		width: 30em;
+		height: auto;
+		margin: 0 auto;
+		max-width: 90%;
 	}
 	animation: expand 0.35s;
-	height: 22%;
 	flex-direction: column;
 }
 .divider {
