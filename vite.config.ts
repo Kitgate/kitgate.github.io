@@ -8,19 +8,20 @@ import fs from "node:fs/promises";
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
+		vue(),
 		{
 			name: "404 copier",
-			async generateBundle(options, bundle) {
-				this.emitFile({
-					type: "asset",
-					fileName: "404.html",
-					source: await fs.readFile(
-						new URL("./index.html", import.meta.url)
-					),
-				});
+			generateBundle: {
+				order: "post",
+				async handler(options, bundle) {
+					this.emitFile({ 
+						type: "asset",
+						fileName: "404.html",
+						source: "source" in bundle["index.html"] ? bundle["index.html"].source : bundle["index.html"].code
+					 })
+				},
 			},
 		},
-		vue(),
 	],
 	resolve: {
 		alias: {
