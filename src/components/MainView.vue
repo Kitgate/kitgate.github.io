@@ -200,14 +200,11 @@ main::after {
 		}
 	}
 	@media only screen and (max-height: 720px) {
+		.title-box img {
+			max-height: 10rem;
+		}
 		.title-box {
 			margin-top: 0.25rem;
-		}
-		.main-article {
-			width: 90%;
-		}
-		.cat-container {
-			width: 14rem;
 		}
 		.article-container {
 			
@@ -216,17 +213,20 @@ main::after {
 	}
 	@media only screen and (max-height: 760px) {
 		.cat-container {
-			width: 10rem;
+			width: 11rem;
+		}
+		.title-box img {
+			max-height: 8rem;
 		}
 		.textbox.textbox.text-box {
 			font-size: 1.2rem;
 			height: 12rem;
-			width: 80%;
+			width: 100%;
 		}
 	}
 	@media only screen and (max-height: 660px) {
-		.title-box img {
-			max-height: 7rem;
+		.main-article {
+			width: 90%;
 		}
 		.title-box {
 			margin-bottom: 0;
@@ -234,6 +234,7 @@ main::after {
 		.textbox.textbox.text-box {
 			height: 9rem;
 			font-size: 1.1rem;
+			width: 90%;
 		}
 		.back-container {
 			margin: 0.1rem;
@@ -241,7 +242,10 @@ main::after {
 	}
 	@media only screen and (max-height: 520px) {
 		.cat-container {
-			width: 10rem;
+			width: 9rem;
+		}
+		.article-container {
+			width: 60%;
 		}
 		.textbox.textbox.text-box {
 			font-size: 1rem;
@@ -250,10 +254,14 @@ main::after {
 			width: 80%;
 			padding: 1rem;
 		}
+		.title-box img {
+			max-height: 7rem;
+		}
 	}
 	@media only screen and (max-height: 420px) {
+		
 		.title-box img {
-			max-height: 6.5rem;
+			max-height: 5.5rem;
 		}
 		.back-container {
 			height: 3rem;
@@ -261,7 +269,7 @@ main::after {
 	}
 	@media only screen and (max-height: 380px) {
 		.title-box img {
-			max-height: 6rem;
+			max-height: 5rem;
 		}
 		.tagline {
 			font-size: 0.9rem;
