@@ -97,18 +97,19 @@ main {
 	display: flex;
 	margin: 0 1rem;
 	flex-direction: v-bind("menuOrder");
+	justify-content: space-evenly;
 }
 .main-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 100%;
+	width: 92%;
 	max-width: 40em;
 	margin: 0 auto;
 	padding: 0 1rem;
 }
 .cat-container {
-	width: 16rem;
+	width: 28rem;
 	display: flex;
 	img {
 		width: 100%;
@@ -116,6 +117,20 @@ main {
 		margin-top: auto;
 	}
 	animation: slide 0.35s;
+	@media only screen and (max-width: 767px) {
+		max-width: 216px;
+	}
+
+	@media only screen and (max-height: 767px) {
+		width: 18rem;
+	}
+	@media only screen and (max-height: 560px) {
+		width: 12rem;
+		img {
+			position: absolute;
+			bottom: 0;
+		}
+	}
 }
 aside {
 	display: flex;
@@ -136,20 +151,21 @@ aside {
 	padding: 0.5rem 0;
 	justify-content: center;
 	width: 100%;
+
+	@media only screen and (max-height: 720px) {
+		margin-top: 1rem;
+	}
 	img {
 		margin: 0 auto;
-		height: 30vh;
-		max-height: 11em;
-		width: auto;
-		@media only screen and (max-width: 810px) {
-			height: auto;
-			width: 85vw;
-
-			max-height: unset;
-		}
+		max-height: min(14rem, 22vh);
+		max-width: min(80vw, 34rem);
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
 	}
 	animation: expand 0.35s;
 	flex-direction: column;
+	font-size: 1.25rem;
 }
 .divider {
 	flex-grow: 1;
@@ -157,18 +173,15 @@ aside {
 .button-container {
 	display: flex;
 	align-items: center;
-	flex-grow: 1;
 	flex-wrap: wrap;
 	height: fit-content;
 	margin-top: auto;
 	.menu-button {
-		width: 50%;
+		width: 12rem;
 	}
-	@media only screen and (max-width: 565px) {
-		.menu-button {
-			width: 100%;
-		}
-		max-width: 45vw;
+	@media only screen and (max-width: 610px) {
+		flex-wrap: nowrap;
+		flex-direction: column;
 	}
 }
 main::before,
@@ -194,91 +207,4 @@ main::after {
 	clip-path: polygon(20% 0%, 80% 0%, 80% 100%, 20% 100%);
 	//width: var(--content-width);
 }
-	@media only screen and (max-height: 810px) {
-		.title-box {
-			margin-top: 0.25rem;
-		}
-	}
-	@media only screen and (max-height: 720px) {
-		.title-box img {
-			max-height: 10rem;
-		}
-		.title-box {
-			margin-top: 0.25rem;
-		}
-		.article-container {
-			
-			margin: auto;
-		}
-	}
-	@media only screen and (max-height: 760px) {
-		.cat-container {
-			width: 11rem;
-		}
-		.title-box img {
-			max-height: 8rem;
-		}
-		.textbox.textbox.text-box {
-			font-size: 1.2rem;
-			height: 12rem;
-			width: 100%;
-		}
-	}
-	@media only screen and (max-height: 660px) {
-		.main-article {
-			width: 90%;
-		}
-		.title-box {
-			margin-bottom: 0;
-		}
-		.textbox.textbox.text-box {
-			height: 9rem;
-			font-size: 1.1rem;
-			width: 90%;
-		}
-		.back-container {
-			margin: 0.1rem;
-		}
-	}
-	@media only screen and (max-height: 520px) {
-		.cat-container {
-			width: 9rem;
-		}
-		.article-container {
-			width: 60%;
-		}
-		.textbox.textbox.text-box {
-			font-size: 1rem;
-			height: 6rem;
-			border-image-width: 0.8rem 0.8rem 0.8rem 0.8rem;
-			width: 80%;
-			padding: 1rem;
-		}
-		.title-box img {
-			max-height: 7rem;
-		}
-	}
-	@media only screen and (max-height: 420px) {
-		
-		.title-box img {
-			max-height: 5.5rem;
-		}
-		.back-container {
-			height: 3rem;
-		}
-	}
-	@media only screen and (max-height: 380px) {
-		.title-box img {
-			max-height: 5rem;
-		}
-		.tagline {
-			font-size: 0.9rem;
-		}
-		.main-article {
-			width: 85%;
-		}
-		.back-container {
-			height: 2.6rem;
-		}
-	}
 </style>
