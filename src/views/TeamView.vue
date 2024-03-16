@@ -66,22 +66,20 @@ import ContentBox from "@/components/ContentBox.vue";
 
 <style lang="scss" scoped>
 .team-container {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2rem;
-	margin: 0 auto;
-	justify-content: space-around;
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr 1fr;
+	gap: min(4em, 4%);
+	padding: 1em;
+	@media only screen and (max-width: 560px) {
+	grid-template: 1fr 1fr 1fr / 1fr 1fr;
+	}
 }
 .member {
-	width: 12rem;
-	@media only screen and (max-width: 560px) {
-		width: 9rem;
-	}
 	text-align: center;
 	img {
 		width: 100%;
 		border-radius: 100%;
-		border: 6px black solid;
+		border: 0.3rem black solid;
 		background-color: #c7a4c4;
 	}
 	h1 {
