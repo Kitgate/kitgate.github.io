@@ -137,10 +137,16 @@ aside {
 	justify-content: center;
 	width: 100%;
 	img {
-		width: 30em;
-		height: auto;
 		margin: 0 auto;
-		max-width: 90%;
+		height: 30vh;
+		max-height: 11em;
+		width: auto;
+		@media only screen and (max-width: 810px) {
+			height: auto;
+			width: 85vw;
+
+			max-height: unset;
+		}
 	}
 	animation: expand 0.35s;
 	flex-direction: column;
@@ -188,4 +194,58 @@ main::after {
 	clip-path: polygon(20% 0%, 80% 0%, 80% 100%, 20% 100%);
 	//width: var(--content-width);
 }
+	@media only screen and (max-height: 810px) {
+		.title-box {
+			margin-top: 0.25rem;
+		}
+	}
+	@media only screen and (max-height: 720px) {
+		.title-box {
+			margin-top: 0.25rem;
+		}
+		.main-article {
+			width: 90%;
+		}
+		.cat-container {
+			width: 14rem;
+		}
+		.article-container {
+			
+			margin: auto;
+		}
+	}
+	@media only screen and (max-height: 660px) {
+		.cat-container {
+			width: 10rem;
+		}
+		.textbox.textbox.text-box {
+			font-size: 1.2rem;
+			height: 12rem;
+			width: 80%;
+		}
+	}
+	@media only screen and (max-height: 560px) {
+		.title-box img {
+			max-height: 7rem;
+		}
+		.textbox.textbox.text-box {
+			height: 9rem;
+			font-size: 1.1rem;
+		}
+		.back-container {
+			margin: 0.1rem;
+		}
+	}
+	@media only screen and (max-height: 520px) {
+		.cat-container {
+			width: 10rem;
+		}
+		.textbox.textbox.text-box {
+			font-size: 1rem;
+			height: 6rem;
+			border-image-width: 0.8rem 0.8rem 0.8rem 0.8rem;
+			width: 80%;
+			padding: 1rem;
+		}
+	}
 </style>
