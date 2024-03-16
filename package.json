@@ -8,7 +8,7 @@
 		"preview": "vite preview",
 		"build-only": "vite build",
 		"type-check": "vue-tsc --noEmit",
-		"publish": "git subtree push --prefix dist origin gh-pages"
+		"pub": "git subtree push --prefix dist origin gh-pages"
 	},
 	"dependencies": {
 		"@altgen/typer-composable": "^1.3.0",
