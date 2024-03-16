@@ -228,6 +228,9 @@ main::after {
 		.title-box img {
 			max-height: 7rem;
 		}
+		.title-box {
+			margin-bottom: 0;
+		}
 		.textbox.textbox.text-box {
 			height: 9rem;
 			font-size: 1.1rem;
@@ -246,6 +249,28 @@ main::after {
 			border-image-width: 0.8rem 0.8rem 0.8rem 0.8rem;
 			width: 80%;
 			padding: 1rem;
+		}
+	}
+	@media only screen and (max-height: 420px) {
+		.title-box img {
+			max-height: 6.5rem;
+		}
+		.back-container {
+			height: 3rem;
+		}
+	}
+	@media only screen and (max-height: 380px) {
+		.title-box img {
+			max-height: 6rem;
+		}
+		.tagline {
+			font-size: 0.9rem;
+		}
+		.main-article {
+			width: 85%;
+		}
+		.back-container {
+			height: 2.6rem;
 		}
 	}
 </style>
