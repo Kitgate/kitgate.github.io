@@ -6,7 +6,7 @@ import ContentBox from "@/components/ContentBox.vue";
 <template>
 	<div class="content-wrapper">
 		<MainView
-			logo="/img/temp/important.png"
+			logo="/img/logo/ourteam.png"
 			logoAlt="Team"
 			text="team"
 			current="team"
